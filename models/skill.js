@@ -8,3 +8,10 @@ const skillSchema = new Schema ({
   learned: Boolean,
   when: Date,
 })
+
+// Compile the schema into a model and export it
+const Skill = mongoose.model('Skill', skillSchema)
+
+export {
+  Skill
+}
